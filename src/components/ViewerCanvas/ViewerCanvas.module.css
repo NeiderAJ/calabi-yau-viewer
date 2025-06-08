@@ -1,0 +1,9 @@
+.canvasContainer {
+  width: 80vw; /* Ocupará el 80% del ancho de la ventana */
+  height: 80vh; /* Ocupará el 80% del alto de la ventana */
+  background-color: #333; /* Un fondo ligeramente diferente para distinguirlo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #555; /* Un borde para verlo claramente */
+}

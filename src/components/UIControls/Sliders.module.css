@@ -1,0 +1,28 @@
+.slidersContainer {
+  position: absolute; /* Para posicionarlo sobre el canvas */
+  top: 20px;
+  left: 20px;
+  background-color: rgba(60, 60, 60, 0.7); /* Fondo semitransparente */
+  padding: 15px;
+  border-radius: 8px;
+  color: #f0f0f0;
+  z-index: 10; /* Asegura que esté por encima del canvas */
+  border: 1px solid #777;
+}
+
+/* Estilos para los sliders */
+
+.sliderControl {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px; /* Espacio entre controles de slider */
+}
+
+.sliderControl label {
+  margin-bottom: 5px;
+  font-size: 0.9em;
+}
+
+.sliderControl input[type="range"] {
+  width: 200px; /* O el ancho que prefieras */
+}
