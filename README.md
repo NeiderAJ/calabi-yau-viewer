@@ -4,6 +4,14 @@ Aplicación web científica e interactiva para explorar una sección bidimension
 
 Esta es la primera versión estable funcional, identificada permanentemente mediante la etiqueta Git `v1.0.0`. El desarrollo posterior se realiza en la rama `develop`; `main` conserva la última versión estable verificada. Consulta [docs/VERSIONES.md](docs/VERSIONES.md) para guardar cambios, publicar y recuperar esta versión.
 
+## Aplicación pública
+
+La versión estable de `main` se compila y publica automáticamente mediante GitHub Actions en:
+
+**https://neideraj.github.io/calabi-yau-viewer/**
+
+El workflow ejecuta primero las pruebas y la compilación; solo despliega el contenido generado en `dist/` cuando ambas verificaciones terminan correctamente.
+
 ## Fundamento matemático
 
 La quíntica de Fermat
@@ -91,7 +99,7 @@ npm run build
 npm run preview
 ```
 
-Vite genera el sitio estático en `dist/`. La opción `base: './'` permite alojarlo en una subruta, lo cual facilita una futura publicación en GitHub Pages.
+Vite genera el sitio estático en `dist/`. La opción `base: '/calabi-yau-viewer/'` adapta todas las rutas de recursos a la subruta pública de GitHub Pages.
 
 ## Limitaciones científicas
 

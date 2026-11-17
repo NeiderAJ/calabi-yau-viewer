@@ -106,6 +106,12 @@ npm run build
 git push origin main
 ```
 
+Ese `push` activa `.github/workflows/deploy-pages.yml`. El workflow prueba y compila `main`, y después publica `dist/` en GitHub Pages. Comprueba el resultado en la pestaña **Actions** y en:
+
+```text
+https://neideraj.github.io/calabi-yau-viewer/
+```
+
 Cuando corresponda crear una nueva versión permanente, usa una etiqueta anotada nueva; nunca muevas `v1.0.0`:
 
 ```bash
